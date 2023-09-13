@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+    <style>
+        body {
+            /* font-family: Arial, sans-serif; */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color:#d9d9d9;
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .dropdown {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+         .fa {
+            position: absolute;
+            transform: translateY(-50%);
+            top:50%;
+            left: 10px;
+            color: #888;
+        }
+        .search_button{
+            margin-left: 70%;
+            margin-top: 0;
+        }
+
+        button {
+            background-color: #10075a;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="form-group">
+            <select id="role" class="dropdown" >
+                <i class="fa fa-users"></i>
+                <option value="" disabled selected>Port of Load </option>
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
+        <div class="form-group">
+        
+            <select id="role" class="dropdown">
+                <i class="fa fa-users"></i>
+                <option value="" disabled selected>Port of Load </option>
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input  type="date" name="begin" 
+            placeholder="dd-mm-yyyy" value="">
+        </div>
+        <div class="search_button">
+        <button onclick="login()">Search</button>
+        </div>
+    </div>
+</body>
+</html> 
+
